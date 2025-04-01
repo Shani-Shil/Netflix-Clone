@@ -1,0 +1,385 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", "Roboto", "Ubuntu", "sans-serif";
+}
+
+body {
+    background-color: black;
+    color: white;
+    height: 100%;
+    width: 100%;
+}
+
+.hero-container {
+    background: linear-gradient(to top, rgba(36, 36, 36, 0.4), #000), url(./stocks/background\ image.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    padding: 10px 8%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+nav .logo {
+    width: 160px;
+    height: auto;
+    cursor: pointer;
+}
+
+nav .logo img {
+    width: 100%;
+
+}
+
+nav button {
+    border: none;
+    outline: none;
+    color: white;
+    background-color: #e50914;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 4px;
+    margin-left: 10px;
+    padding: 8px 17px;
+    cursor: pointer;
+
+}
+
+nav .btn-lang {
+    background-color: transparent;
+    border: 1px solid #606060;
+}
+
+.btn-lang i {
+    margin-left: 3px;
+}
+
+.header-text {
+    display: grid;
+    text-align: center;
+    place-items: center;
+    margin-top: 15%;
+
+}
+
+.header-text h1 {
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 60px;
+    margin-bottom: -15px;
+}
+
+.header-text p {
+    margin-top: 20px;
+}
+
+.header-text .email {
+    margin: auto;
+    display: flex;
+    gap: 6px;
+    border: 0;
+    align-items: center;
+    outline: none;
+}
+
+.header-text .email input {
+    border: 1px solid #5e5e5f;
+    background-color: rgba(20, 20, 20, 0.5);
+    outline: none;
+    padding: 15px 70px;
+    border-radius: 4px;
+    font-size: 16px;
+    color: white;
+    font-weight: 500;
+    margin-top: 15px;
+
+}
+
+.header-text .email .btn-get {
+    padding: 15px 40px;
+    font-size: 16px;
+    color: white;
+    border-radius: 4px;
+    background-color: #e50914;
+    border: 0;
+    margin-top: 15px;
+}
+
+.top-trending {
+    background-color: black;
+    border-top-width: 80%;
+    border-top: 2px solid red;
+    justify-items: center;
+
+}
+
+.trending-content {
+    height: 100%;
+    width: 80%;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+
+}
+
+.top-trending h1 {
+    color: white;
+    font-weight: 700;
+    margin: 0 0 1rem 0.5rem;
+}
+
+.cards-section {
+    position: relative;
+    display: flex;
+}
+
+.cards {
+    display: flex;
+    overflow-x: scroll;
+    height: 300px;
+    width: 80%;
+    justify-content: center;
+    margin: auto;
+    gap: 1rem;
+}
+
+.cards::-webkit-scrollbar {
+    appearance: none;
+}
+
+.card-container {
+    width: 180px;
+    height: 250px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.card-container img {
+    border-radius: 7px;
+    width: 160px;
+    height: 240px;
+    margin: 0.5rem 0;
+}
+
+.card-container:hover img {
+    transition: all ease 0.2s;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.card-button {
+    position: absolute;
+    right: -40px;
+    top: 70px;
+}
+
+.card-button button {
+    height: 8rem;
+    background-color: rgb(37, 37, 37);
+    border: none;
+    border-radius: 10px;
+}
+
+.card-button button svg {
+    color: white;
+}
+
+.card-button button:hover {
+    background-color: rgb(71, 71, 71);
+    cursor: pointer;
+}
+
+.card-container span {
+    font-size: 5rem;
+    font-weight: 900;
+    color: black;
+    text-shadow: 2px 2px 2px 3px grey inset;
+    position: absolute;
+    bottom: 0;
+    left: -1px;
+    z-index: 10;
+    -webkit-text-stroke-color: white;
+    -webkit-text-stroke-width: 2px;
+}
+
+.faq {
+    background-color: black;
+    padding: 35px;
+}
+
+.faq h3 {
+    color: white;
+    text-align: left;
+    margin: -90px 0 16px 67px;
+}
+
+.faq .box span {
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.faq .box {
+    display: flex;
+    justify-content: space-between;
+    border: none;
+    border-radius: 4px;
+    background-color: #2d2d2d;
+    max-width: 80vw;
+    margin: 20px auto -10px auto;
+    padding: 20px 20px;
+
+}
+
+.faq .box:hover {
+    background-color: #414141;
+    border-radius: 4px;
+
+}
+
+.box i {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.box i:hover {
+    transform: rotate(45deg);
+    transition: all 0.5s;
+}
+.faq-footer{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+   
+}
+.faq-footer p{
+    font-size: 20px;
+    text-align: center;
+}
+
+.faq-footer .email {
+    margin: auto;
+    display: flex;
+    gap: 6px;
+    border: 0;
+    align-items: center;
+    outline: none;
+}
+
+.faq-footer .email input {
+    border: 1px solid #5e5e5f;
+    background-color: rgba(20, 20, 20, 0.5);
+    outline: none;
+    padding: 15px 70px;
+    border-radius: 4px;
+    font-size: 16px;
+    color: white;
+    font-weight: 500;
+    margin-top: 15px;
+
+}
+
+.faq-footer .email .btn-get {
+    padding: 15px 40px;
+    font-size: 16px;
+    color: white;
+    border-radius: 4px;
+    background-color: #e50914;
+    border: 0;
+    margin-top: 15px;
+}
+footer{
+    max-width: 80vw;
+    margin:30px auto;
+    color: #b3b3b3;
+}
+footer p{
+    margin-bottom: 20px;
+    color: #b3b3b3;
+    
+}
+footer p a{
+    margin-left: 4px;
+    color: #b3b3b3;
+    
+}
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 50px;
+    
+}
+.links{
+    display: flex;
+    line-height: 2;
+    
+}
+.links ul li{
+    list-style: none;
+}
+.links ul li a{
+    text-decoration: none;
+    color: #b3b3b3;   
+}
+#bottom-lang {
+    margin: 2rem 0;
+}
+.lang-select {
+    height: 2.2rem;
+    width: 8rem;
+    position: relative;
+}
+
+.lang-select svg {
+    color: white;
+    position: absolute;
+    left: 10px;
+    top: 7px;
+    pointer-events: none;
+}
+
+.lang-select i {
+    color: white;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    pointer-events: none;
+    font-size: 10px;
+}
+
+.lang-select select {
+    background: transparent;
+    color: rgb(255, 255, 255);
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 0 29px;
+    height: 2rem;
+    width: 8rem;
+    text-align: center;
+    border: 1px solid grey;
+    border-radius: 4px;
+    appearance: none;
+}
+
+
+.lang-select select:focus {
+    outline: 2px solid #ffffff;
+    outline-offset: 2px;
+}
+
+.lang-select select option {
+    color: black;
+    text-align: left;
+}
